@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prices</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <a href="index.html">
+  <img src="assets/doxbin-logo.webp" alt="Logo" class="main-logo" />
+</a>
+  </header>
+  <div class="products">
+    <div class="product" onclick="toggleDetails(1)">
+      <h2>Low Balance</h2>
+      <p>$1,000 - $1,500</p>
+      <div class="details" id="details1">
+        <p>Price: $75</p>
+        <p>Payment: Revolut / Crypto / Card</p>
+      </div>
+    </div>
+
+    <div class="product" onclick="toggleDetails(2)">
+      <h2>Mid Balance</h2>
+      <p>$1,500 - $2,000</p>
+      <div class="details" id="details2">
+        <p>Price: $120</p>
+        <p>Payment: Revolut / Crypto / Card</p>
+      </div>
+    </div>
+
+    <div class="product" onclick="toggleDetails(3)">
+      <h2>Cashout</h2>
+      <p>Crypto / PayPal</p>
+      <div class="details" id="details3">
+        <p>Price: $50</p>
+      </div>
+    </div>
+
+    <div class="product" onclick="toggleDetails(4)">
+      <h2>Cashout PayPal Instant</h2>
+      <p>Instant Transfer</p>
+      <div class="details" id="details4">
+        <p>Price: $100</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleDetails(id) {
+      const box = document.getElementById(`details${id}`);
+      box.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
