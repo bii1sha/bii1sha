@@ -126,3 +126,40 @@ header {
   height: 24px;
   object-fit: contain;
 }
+.how-it-works {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+.how-it-works h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.step {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.step h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Fade-in animation */
+.step.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
