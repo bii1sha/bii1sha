@@ -22,12 +22,31 @@
   <section class="intro">
     <h1>What We Do</h1>
     <p>We steal debit/credit cards using RAT software which takes the victims information along with card details, phone number, email, IP, and his passwords. And then we sell those information such as his PayPal account, cash app, his cards, and many valuable information. We use an OTP bot to verify the card when it’s linked to an payment app such as PayPal then when it’s verified we withdraw the money into the account then pool the money into one account that, from there we can transfer those money to my costumers for example you purchase a low balance I will send 1500$ to you and then you’ll send back 500$ to my clothing brand website so we both make clean money and profit.
-
-
-Why we do this?
-
-I get asked why don’t I keep the money for myself, imagine a kid with this lifestyle and no job or business and suddenly has thousands of dollars. Of course the government and bank will be on my ass and can get caught easily, so we sell them to our costumers they take half of it we take half of it through our clothingbrand website and we pay taxes based on the clothingbrand so we don’t raise any suspicion and can get away with it easily.</p>
+</p>
   </section>
+<section class="how-it-works">
+  <h2> How It Works — Step by Step</h2>
+
+  <div class="step fade-in">
+    <h3> Step 1</h3>
+    <p>You'll have to deposit $75–$120 depending on the balance you want.</p>
+  </div>
+
+  <div class="step fade-in">
+    <h3> Step 2</h3>
+    <p>You'll get the card details plus a guide file on how to withdraw.</p>
+  </div>
+
+  <div class="step fade-in">
+    <h3> Step 3</h3>
+    <p>After you withdraw, you’ll need to send back $500–$600 depending on the balance you bought.</p>
+  </div>
+
+  <div class="step fade-in">
+    <h3> Step 4</h3>
+    <p>If you can’t figure out how to withdraw, you can pay the extra cashout fee and we will do it for you and send the money to you.</p>
+  </div>
+</section>
 
   <div class="button-group">
     <a href="https://t.me/yourchannel" class="telegram-button" target="_blank">
@@ -41,4 +60,22 @@ I get asked why don’t I keep the money for myself, imagine a kid with this lif
 
 <script src="script.js"></script>
 </body>
+<script>
+  // Fade in each step when it's in the viewport
+  const steps = document.querySelectorAll('.fade-in');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, {
+    threshold: 0.1,
+  });
+
+  steps.forEach(step => {
+    observer.observe(step);
+  });
+</script>
 </html>
